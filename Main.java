@@ -41,5 +41,6 @@ public class Main {
             constructorInternals += "        " + name + " = the" + camelName + ";\n";
         }
         System.out.println(output + constructor.substring(0, constructor.length() - 2) + ") {" + constructorInternals + "    }\n\n" + getter + setter + "}");
+        scan.close();
     }
 }
